@@ -1,0 +1,25 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans 'Gift detail' %}</title>
+</head>
+<body>
+    <a href="{% url 'cadeaux-list' %}">{% trans 'Back' %}</a>
+    <h1>{% trans 'Gift detail' %}</h1>
+    <h2>{% trans 'Gift name' %} : {{ object.nom }}</h2>
+    <h2>{% trans 'Gift price' %} : {{ object.prix }}€</h2>
+    <h3>{% trans 'Detail' %} : </h3>
+    {% if object.detail %}
+        <p>
+            {{ object.detail }}
+        </p>
+    {% else %}
+        <p>
+            {% trans 'No detail to display' %}
+        </p>
+    {% endif %}
+    <a href="{% url 'cadeau-update' pk=object.id %}">{% trans 'Edit gift' %}</a>
+</body>
+</html>

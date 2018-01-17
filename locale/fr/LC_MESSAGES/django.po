@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-17 20:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: app/forms/register.py:13
+msgid "Enter a password"
+msgstr "Entrez un mot de passe"
+
+#: app/forms/register.py:17
+msgid "Confirm your password"
+msgstr "Entrez à nouveau ce mot de passe"
+
+#: app/forms/register.py:23 app/forms/register.py:28
+msgid "Optionnal"
+msgstr "Optionnel"
+
+#: giftideas/urls.py:33
+msgid "gifts/update/(?P<pk>\\d+)"
+msgstr "cadeaux/update/(?P<pk>\\d+)"
+
+#: giftideas/urls.py:35
+msgid "gifts/(?P<pk>\\d+)"
+msgstr "cadeaux/(?P<pk>\\d+)"
+
+#: giftideas/urls.py:37
+msgid "gifts"
+msgstr "cadeaux"
+
+#: templates/cadeauDetail.html:6 templates/cadeauDetail.html:10
+msgid "Gift detail"
+msgstr "Détail du cadeau"
+
+#: templates/cadeauDetail.html:9
+msgid "Back"
+msgstr "Retour"
+
+#: templates/cadeauDetail.html:11
+msgid "Gift name"
+msgstr "Nom du cadeau"
+
+#: templates/cadeauDetail.html:12
+#, fuzzy
+#| msgid "Gifts list"
+msgid "Gift price"
+msgstr "Prix du cadeau"
+
+#: templates/cadeauDetail.html:13
+msgid "Detail"
+msgstr "Détail"
+
+#: templates/cadeauDetail.html:20
+msgid "No detail to display"
+msgstr "Aucun détail à afficher"
+
+#: templates/cadeauDetail.html:23
+msgid "Edit gift"
+msgstr "Editer le cadeau"
+
+#: templates/cadeau_update_form.html:6
+#, fuzzy
+#| msgid "Gift detail"
+msgid "Gift edition"
+msgstr "Détail du cadeau"
+
+#: templates/cadeaux.html:6 templates/cadeaux.html:9
+msgid "Gifts list"
+msgstr "Liste des cadeaux"
+
+#: templates/cadeaux.html:12
+msgid "See"
+msgstr "Voir"
+
+#: templates/cadeaux.html:14
+msgid "No gift available"
+msgstr "Aucun cadeau disponible"
+
+#: templates/index.html:27
+msgid ""
+"\n"
+"                Hello<br />\n"
+"                This is my new website\n"
+"            "
+msgstr ""
+"\n"
+"                Bonjour<br />\n"
+"                super site\n"
+"            "
+
+#: templates/index.html:32
+msgid "Connected"
+msgstr "Connecté"
+
+#: templates/index.html:34
+msgid "Not connected"
+msgstr "Non connecté"
+
+#: templates/login.html:7
+msgid "Login"
+msgstr "Connexion"
+
+#: templates/register.html:7
+msgid "Register"
+msgstr "Création de compte"
+
+#~ msgid "login"
+#~ msgstr "connexion"
+
+#~ msgid "Hello"
+#~ msgstr "Bonjour"

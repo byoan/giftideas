@@ -1,0 +1,64 @@
+{% load static i18n %}
+
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="{% static 'site.webmanifest' %}">
+        <link rel="apple-touch-icon" href="{% static 'icon.png' %}">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="{% static "css/normalize.css" %}">
+        <link rel="stylesheet" href="{% static "css/main.css" %}">
+        <link rel="stylesheet" href="{% static "css/vegas.min.css" %}">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <p>
+            {% blocktrans %}
+                Hello<br />
+                This is my new website
+            {% endblocktrans %}
+            {% if user.is_authenticated %}
+                <h2>{% trans 'Connected' %}</h2>
+                {% else %}
+                <h2>{% trans 'Not connected' %}</h2>
+            {% endif %}
+        </p>
+        <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="{% static 'js/vendor/jquery-3.2.1.min.js' %}"><\/script>')</script>
+        <script src="{% static 'js/plugins.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/vendor/vegas.min.js' %}"></script>
+
+        <script>
+{#            alert("{% trans "Hello" %}");#}
+        </script>
+
+        <script>
+            $('body').vegas({
+                delay: 2000,
+                timer: false,
+                shuffle: true,
+                firstTransition: 'fade',
+                firstTransitionDuration: 5000,
+                transition: 'slideDown2',
+                transitionDuration: 2000,
+                slides: [
+                    { src: "{% static 'img/meme1.jpg' %}" },
+                    { src: "{% static 'img/meme2.jpg' %}" }
+                ]
+            });
+        </script>
+    </body>
+</html>
